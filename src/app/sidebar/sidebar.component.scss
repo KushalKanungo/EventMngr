@@ -1,0 +1,18 @@
+@use "../../global";
+nav {
+  background-color: global.$darkAccent;
+  height: 100vh;
+  width: 20vw;
+  position: fixed;
+}
+
+ul {
+  list-style: none;
+  li {
+    font-size: 1.4rem;
+    margin: 1.1rem 0 1.1rem 0;
+    i {
+      margin-right: 8px;
+    }
+  }
+}
