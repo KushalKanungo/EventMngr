@@ -1,0 +1,10 @@
+<div class="display-4">{{ eventName }}</div>
+<hr />
+<div class="row">
+  <div class="col-4" *ngFor="let contest of contests">
+    <app-contest-card
+      [contestData]="contest"
+      (click)="onClickHandeler()"
+    ></app-contest-card>
+  </div>
+</div>
