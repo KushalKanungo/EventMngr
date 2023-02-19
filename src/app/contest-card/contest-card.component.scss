@@ -1,14 +1,29 @@
+@use "../../global";
 .contest-card {
+  cursor: pointer;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   height: 160px;
   border-radius: 4px;
   margin-top: 1.2rem;
   padding: 20px;
+  transition: all 0.4s ease-out;
   h4 {
     font-weight: 400;
     font-size: 1.4rem;
   }
   p {
     font-size: 0.8rem;
+  }
+}
+
+.contest-card:hover {
+  // transform: scale(1.05);
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  background-color: global.$darkAccent;
+  h4 {
+    color: white;
+  }
+  p {
+    color: global.$lightAccent;
   }
 }

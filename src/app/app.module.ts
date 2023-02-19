@@ -6,13 +6,17 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { ContestComponent } from './contest/contest.component';
+import { ContestCardComponent } from './contest-card/contest-card.component';
+import { ContestPageComponent } from './contest-page/contest-page.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     SidebarComponent,
-    ContestComponent
+    ContestComponent,
+    ContestCardComponent,
+    ContestPageComponent
   ],
   imports: [
     BrowserModule,
