@@ -1,0 +1,12 @@
+@use "../../global";
+section {
+  background-color: global.$lightAccent;
+}
+
+#image-placeholder {
+  background-color: rgb(208, 222, 223);
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
