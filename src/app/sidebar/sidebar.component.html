@@ -1,13 +1,15 @@
 <nav class="px-5">
   <!-- Comapny Name starts-->
   <div class="mt-5 mb-5">
-    <div class="display-5">{{ companyHeading }}</div>
-    <h4>{{ companySubHeading }}</h4>
+    <div class="display-5 text-center">{{ companyHeading }}</div>
+    <h3 class="text-center">{{ companySubHeading }}</h3>
   </div>
   <!-- Company Name ends -->
   <ul>
-    <li><i class="bi bi-body-text"></i>Events</li>
-    <li><i class="bi bi-calendar2-event"></i>Upcomming</li>
+    <li (click)="contestsLinkHandeler()">
+      <i class="bi bi-body-text"></i>Contests
+    </li>
+    <li><i class="bi bi-calendar2-event"></i>Registered</li>
     <li><i class="bi bi-trophy"></i> Results</li>
     <li><i class="bi bi-hourglass-bottom"></i>Finished</li>
   </ul>

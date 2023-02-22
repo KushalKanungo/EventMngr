@@ -8,6 +8,8 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 import { ContestComponent } from './contest/contest.component';
 import { ContestCardComponent } from './contest-card/contest-card.component';
 import { ContestPageComponent } from './contest-page/contest-page.component';
+import { LoginComponent } from './login/login.component';
+import { LoginLoaderComponent } from './login-loader/login-loader.component';
 
 @NgModule({
   declarations: [
@@ -16,13 +18,12 @@ import { ContestPageComponent } from './contest-page/contest-page.component';
     SidebarComponent,
     ContestComponent,
     ContestCardComponent,
-    ContestPageComponent
+    ContestPageComponent,
+    LoginComponent,
+    LoginLoaderComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

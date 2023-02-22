@@ -1,5 +1,6 @@
 <!-- <app-navbar></app-navbar> -->
-<app-sidebar></app-sidebar>
+<app-login-loader> </app-login-loader>
+<app-sidebar *ngIf="isLoggedIn | async"></app-sidebar>
 <section>
   <!-- <app-contest></app-contest> -->
   <router-outlet></router-outlet>
